@@ -1,10 +1,14 @@
 //This code will not validate the type of data entered
 //into the method. This could cause errors if incorrect values are entered
-
+//Also, though a security check is being performed, the method is public
 public int setInt(int int){
-	myInt = int;
+	SecurityManager sm = System.getSecurityManager();
+    	if (sm != null) {  // Check for permission to read file
+		myInt = int;
 	}
 	
 	public void useInt(){
 	//use myInt
 	}
+
+    }
