@@ -1,0 +1,9 @@
+//This code violates supression of exceptions. Simply printing a stack trace
+// allows the exception to happen with no real prevention or handling
+
+try{
+	x = str + ex;
+	}
+	catch (Exception e) {
+  e.printStackTrace();
+  }
