@@ -1,0 +1,10 @@
+//This code will not validate the type of data entered
+//into the method. This could cause errors if incorrect values are entered
+
+public int setInt(int int){
+	myInt = int;
+	}
+	
+	public void useInt(){
+	//use myInt
+	}
